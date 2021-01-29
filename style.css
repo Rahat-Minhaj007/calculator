@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(70deg,tomato,lightsalmon);
+    height: 648px;
+}
+.btnStyle{
+    
+    margin: 4px;
+
+    
+}
+.container{
+    height: 375px;
+    width: 280px;
+    border: 1px solid rgb(236, 236, 236);
+    margin-top: 100px;
+    background-color: rgb(236, 233, 233);
+    border-radius: 10px;
+
+}
+
+#display{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+}

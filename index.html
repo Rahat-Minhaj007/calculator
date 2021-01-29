@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="container">
+
+        <table border="0" height="260px" width="18%" cellspacing="0" align="center" class="mt-5 ">
+            <thead>
+                <tr>
+                    <th colspan="4"><input id="display" type="text" class="form-control" value=""></th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="padding: 30px;">
+                    <th><button class="btn btn-warning btnStyle" onclick="ac(this.value)" value="0">AC</button></th>
+                    <th><button id="btn1" class="btn btn-info btnStyle" onclick="calculate(this.value)"
+                            value="1">1</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="2">2</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="3">3</button></th>
+
+
+                </tr>
+                <tr>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="4">4</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="5">5</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="6">6</button></th>
+                    <th><button class="btn btn-warning btnStyle" onclick="calculate(this.value)" value="+">+</button>
+                    </th>
+
+
+                </tr>
+                <tr>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="7">7</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="8">8</button></th>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="9">9</button></th>
+
+                    <th><button class="btn btn-warning btnStyle" onclick="calculate(this.value)" value="-">-</button>
+                    </th>
+
+                </tr>
+                <tr>
+                    <th><button class="btn btn-info btnStyle" onclick="calculate(this.value)" value="0">0</button></th>
+                    <th><button class="btn btn-warning btnStyle" onclick="calculate(this.value)" value="*">*</button>
+                    </th>
+                    <th><button class="btn btn-warning btnStyle" onclick="calculate(this.value)" value="/">/</button>
+                    </th>
+                    <th><button class="btn btn-warning btnStyle" onclick="display.value = eval(display.value)"
+                            value="=">=</button></th>
+
+                </tr>
+                <tr>
+                    <th><button class="btn btn-warning btnStyle" onclick="dlt(this.value)" value="">DEL</button></th>
+                    <th><button class="btn btn-warning btnStyle" onclick="calculate(this.value)" value=".">.</button>
+                    </th>
+
+
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
